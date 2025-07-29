@@ -42,6 +42,23 @@ print("is" not in text) # print bool - similer with if
 
 
 
+# slicing in String ------------------------------------
+
+# -> use to get the range of char
+
+# get the char from n to m - like 3 to 5
+# it will not return the last char like we will get 3 and 4 char only
+x = "hello world"
+print(x[3:5])
+
+print(x[:5]) # - slice from start to 5th char
+
+print(x[3:]) # - slice from 3rd to end char
+
+# can use nagativ indexing to start slicing from the end of the string
+print(x[-5:-3])
+
+
 
 
 
