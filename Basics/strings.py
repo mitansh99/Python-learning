@@ -58,6 +58,31 @@ print(x[3:]) # - slice from 3rd to end char
 # can use nagativ indexing to start slicing from the end of the string
 print(x[-5:-3])
 
+# string modifications ---------------------------------
+
+# buit in methods to modify string 
+
+"hello world".upper() # to convert string to the upper case
+
+"hello world".lower() # to covert string to the lower case
+
+"hello world".strip() # to remove whitespace from the string
+
+"hello world".replace("h" , "k") # to replace strig with other string 
+
+"hello world".split(" ") # split string from the given string return array
+
+
+# String Concatenation  -----------------------------------
+
+# concate or combine two string by using '+'
+
+x = "hello"
+y = "world"
+print(x + y)
+
+print(x + " " + y) # to add space between concate
+
 
 
 
