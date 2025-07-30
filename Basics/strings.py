@@ -83,6 +83,39 @@ print(x + y)
 
 print(x + " " + y) # to add space between concate
 
+# f-string  ----------------------------------
+
+# As we can not do "hello" + 10 so we can use f - format() method to combine the string with numbers
+
+age = 15
+text = f"Hello world ! {age}" # can be use as place holder or modifer
+
+# place holder can include modifer to format 
+
+price = 10
+text = f"price of this product is {price:.2f}" # convert to the 2 decimal points 10.00
+
+# place holder can contain the python code 
+gst = 2
+text = f"price is {price * gst}"
+
+
+# Escape character ---------------------------------------
+
+# use to add the char that are illegal in the string - \
+text =  "we are \"gammers\" from india"
+
+# \' - single quote 
+# \\ - Backslash
+# \n - New line
+# \r - carriage return
+# \t - tab
+# \b - backspace
+# \f - form feed
+# \ooo - Octal view
+# \xhh - Hex view
+
+
 
 
 
