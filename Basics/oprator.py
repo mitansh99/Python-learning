@@ -61,4 +61,11 @@ x ^ y # set each bit to one if only one of two bitd is 1
 x << 2 # left shift
 x >> 2 # right shift
 
+# Operator precedence
+
+# desc.. the Order in which operations are performed.
+
+print((6 + 3) - (6 + 3)) # higest precedence is ()
+
+print(100 + 5 * 3) # multiplication * have higer precedence then Addition +
 
