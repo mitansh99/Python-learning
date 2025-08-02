@@ -29,3 +29,5 @@ print(type(thislist))
 # we can use list constructor to create a new list
 
 thislist = list(("apple", "banana", "cherry")) 
+
+# streak
