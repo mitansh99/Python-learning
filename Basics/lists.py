@@ -70,6 +70,58 @@ thislist[1:3] = ["watermelon"]
 thislist = ["apple", "banana", "cherry"]
 thislist.insert(2, "watermelon") # insert(index, value)
 
+# Add items to list ----------------------------
+
+#append() use to add the item to the end of the list
+
+thislist.append("orange")
+
+# insert(index, value) - use to addt the item to the spacific index
+
+thislist.insert(1, "orange")
+
+# extend list -- to append ele from the another list
+
+tropical = ["mango", "pineapple", "papaya"]
+thislist.extend(tropical)
+# The elements will be added to the end of the list
+
+
+
+# Remove items from List ----------------------------------
+
+# remove() - use to remove spacific item 
+
+thislist.remove("banana") # if more then one same items then remove first on the list
+
+# pop() - use to remove spacific index
+
+thislist.pop(1) # remove the last item if we dont spacify the index
+
+# del keyword -  use to remove the spacific items
+
+del thislist[0] # remove the first item
+
+del thislist # delete the enitre list
+
+# clear() - use to clear the list remin the list just remove content
+
+thislist.clear()
+
+ 
+# Loop through the list -----------------------------
+
+for x in thislist:
+  print(x)
+
+# loop through the index numbers
+
+for i in range(len(thislist)):
+  print(thislist[i])
+
+# we can also use whlile loop too
+
+
 
 
 
