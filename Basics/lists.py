@@ -122,7 +122,63 @@ for i in range(len(thislist)):
 # we can also use whlile loop too
 
 
+# List comprehension ------------------------
+
+# use - for the create a new list based on the values of an existing list
 
 
+# Sort List ----------------------------------
+
+# sort()  - used to sort the list alphanumerically
+
+thislist.sort()
+
+thislist.sort(reverse = True) # sort descending 
 
 
+# customize sort funtion by key = funvtionName
+
+def myfunc(n):
+  return abs(n - 50)
+
+thislist = [100, 50, 65, 82, 23]
+thislist.sort(key = myfunc)
+
+# casesensitve sort sort all the capital first then lower case
+
+thislist.sort(key = str.lower) # to perform case-insesitivity - inbuilt func
+
+# reverse() - get the reverse order
+
+thislist = ["banana", "Orange", "Kiwi", "cherry"]
+thislist.reverse()
+
+# Copy List -----------------------------------
+
+list = thislist
+
+# this will copy the thislist data to the list 
+# all the changes on the thislist automatically updated to the list
+
+# copy() - we can also use buit in method to copy list
+
+mylist = thislist.copy()
+
+# list() - another way to copy list built in method
+
+mylist = list(thislist)
+
+# : - slice oprator we can also create a copy of list
+
+mylist = thislist[:]
+
+# Join or concate the list  ---------------------------
+
+# + : useing '+' op we can concate the list which is easy way
+
+list3 = list1 + list2
+
+# another way is to append all the items one by one using loop
+
+# extend() : anotehr way to concate  the list
+list1.extend(list2)
