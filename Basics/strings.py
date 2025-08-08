@@ -115,7 +115,7 @@ text =  "we are \"gammers\" from india"
 # \ooo - Octal view
 # \xhh - Hex view
 
-
+print("hello word lakhi de")
 
 
 
