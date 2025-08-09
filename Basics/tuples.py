@@ -44,3 +44,69 @@ thistuple = tuple(("apple", "banana", "cherry")) # not double parenthesis
 # *Set items are unchangeable, but you can remove and/or add items whenever you like.
 
 # **As of Python version 3.7, dictionaries are ordered. In Python 3.6 and earlier, dictionaries are unordered
+
+# Access tuple items -- by the index numbers , insexe square brackets
+
+thistuple = ("apple","banana")
+print(thistuple[1]) # first index start from 0
+
+# Nagative Indexing -- start from the last item
+
+thistuple[-1]
+
+# Range of Index -- we can spacify where to start 
+
+# thistuplep[2:5] -- Start with 2nd index and end to 4th index (Not include the last)
+print(thistuple[:4]) # Strat from all index
+
+print(thistuple[2:]) # All Items after 2nd index
+
+# same we can do nagitive index
+
+# check item exsist in tuple
+thistuple = ("apple", "banana", "cherry")
+if "apple" in thistuple:
+  print("Yes, 'apple' is in the fruits tuple")
+
+
+# tuple update -- tuple can not be chnage , add, or remove items once the tuple is created
+
+# Immutables == tuples
+
+# you can convet the value into the list change the value and convert back to the tuple
+x = ("apple", "banana", "cherry")
+y = list(x)
+y[1] = "kiwi"
+x = tuple(y)
+
+print(x)
+
+# same way to add the value 
+
+thistuple = ("apple", "banana", "cherry")
+y = list(thistuple)
+y.append("orange")
+thistuple = tuple(y)
+
+# Allow to add tuple into the tuple (concatination)
+
+thistuple = ("apple", "banana", "cherry")
+y = ("orange",)
+thistuple += y
+
+print(thistuple)
+
+# When creating a tuple with only one item, remember to include a comma after the item, otherwise it will not be identified as a tuple
+
+# Note: You cannot remove items in a tuple.
+
+# but we can do the same workaround 
+thistuple = ("apple", "banana", "cherry")
+y = list(thistuple)
+y.remove("apple")
+thistuple = tuple(y)
+
+# We can delete the tuple completely
+thistuple = ("apple", "banana", "cherry")
+del thistuple
+print(thistuple)
