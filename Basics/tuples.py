@@ -138,3 +138,46 @@ fruits = ("apple", "banana", "cherry", "strawberry", "raspberry")
 fruits = ("apple", "mango", "papaya", "pineapple", "cherry")
 
 (green, *tropic, red) = fruits
+
+
+# Loop through tuple - using for loop 
+
+thistuple = ("apple", "banana", "cherry")
+for x in thistuple:
+  print(x)
+
+# we can also loop thrugh the index number - using range() and len()
+
+thistuple = ("apple", "banana", "cherry")
+for i in range(len(thistuple)):
+  print(thistuple[i])
+  
+# using While loop 
+
+thistuple = ("apple", "banana", "cherry")
+i = 0
+while i < len(thistuple):
+  print(thistuple[i])
+  i = i + 1
+  
+# tuple can join using the '+' oprator
+
+tuple1 = ("a", "b" , "c")
+tuple2 = (1, 2, 3)
+
+tuple3 = tuple1 + tuple2
+print(tuple3)
+
+# multiply the tuple using '*'
+
+fruits = ("apple", "banana", "cherry")
+mytuple = fruits * 2
+
+print(mytuple)
+
+
+# tuple methods 
+
+# count() - Returns the number of times a specified value occurs in a tuple
+
+# index() - Searches the tuple for a specified value and returns the position of where it was found
