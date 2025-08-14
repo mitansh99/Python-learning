@@ -20,3 +20,5 @@ type(thisset) # <class 'set'>
 
 thisset = set(("apple", "banana", "cherry")) # note the double round-brackets
 
+# streak 
+print("Hello world!")
