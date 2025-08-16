@@ -25,5 +25,4 @@ This repo will track my progress from beginner concepts to advanced topics.
 - ⬜️ Working with APIs
 - ⬜️ Web Development (Flask / Django)
 - ⬜️ Automation & Scripting
-- ⬜️ Introduction to Data Science / Pandas / 
-
+- 
