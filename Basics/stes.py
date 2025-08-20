@@ -68,3 +68,40 @@ thisset.clear() # clear the set
 
 
 del thisset # use to delete the set completly
+
+
+# Join Sets -------------------------------------
+
+# Union() - update() - Join all items of two sets
+set1 = {"a", "b", "c"}
+set2 = {1, 2, 3}
+
+set3 = set1.union(set2) # we can use | operator insted od union 
+print(set3)
+
+# join()
+
+set1 = {"a", "b", "c"}
+set2 = {1, 2, 3}
+set3 = {"John", "Elena"}
+set4 = {"apple", "bananas", "cherry"}
+
+myset = set1.union(set2, set3, set4) # myset = set1 | set2 | set3 |set4
+print(myset)
+
+# join a set and tuple
+x = {"a", "b", "c"}
+y = (1, 2, 3)
+
+z = x.union(y)
+
+# update() - change the original set and do not return a new set
+
+# intersection() / & - keeps only duplicates - will return a new set
+set1 = {"apple", "banana", "cherry"}
+set2 = {"google", "microsoft", "apple"}
+
+set3 = set1.intersection(set2) # set3 = set1 & set2
+print(set3)
+# diffrerence() - Keeps items from the first set that are not in other sets
+# symmetric_difference() method keeps all items EXCEPT the duplicates.
