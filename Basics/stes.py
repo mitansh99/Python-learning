@@ -97,11 +97,26 @@ z = x.union(y)
 
 # update() - change the original set and do not return a new set
 
-# intersection() / & - keeps only duplicates - will return a new set
+# intersection() / & - keeps only duplicates(item that is present in both sets) - will return a new set
 set1 = {"apple", "banana", "cherry"}
 set2 = {"google", "microsoft", "apple"}
 
 set3 = set1.intersection(set2) # set3 = set1 & set2
 print(set3)
-# diffrerence() - Keeps items from the first set that are not in other sets
+
+# intersection_update()  change the origanl set insted of return new
+
+# diffrerence() / '-' - Keeps items from the first set that are not in other sets
+
+set1 = {"apple", "banana", "cherry"}
+set2 = {"google", "microsoft", "apple"}
+
+set3 = set1.difference(set2) # set3 = set1 - set2 - Only allow you to join set with set
+
+
 # symmetric_difference() method keeps all items EXCEPT the duplicates.
+
+set1 = {"apple", "banana", "cherry"}
+set2 = {"google", "microsoft", "apple"}
+
+set3 = set1.symmetric_difference(set2) # ^ use this 
