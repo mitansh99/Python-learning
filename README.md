@@ -27,4 +27,3 @@ This repo will track my progress from beginner concepts to advanced topics.
 - ⬜️ Automation & Scripting
 - ⬜️ Data science & Data cleaning 
 
-streak 🥲 
