@@ -119,3 +119,60 @@ del thisdict["model"]
 
 # clear() - method clear the dict
 thisdict.clear()
+
+# loop through the dict
+for x in thisdict:
+  print(thisdict[x])
+  
+# by the values 
+for x in thisdict.values():
+  print(x)
+
+# keys methods to get all keys
+for x in thisdict.keys():
+  print(x)
+
+# loop throug both key and values
+for x, y in thisdict.items():
+  print(x, y)
+  
+# can not copy the dicts simply by the  dict2 = dict1 
+# insted use copy()
+
+mydict = thisdict.copy()
+
+# another way is use built in dict()
+
+mydict = dict(thisdict)
+
+# nasted dicts
+
+myfamily = {
+  "child1" : {
+    "name" : "Emil",
+    "year" : 2004
+  },
+  "child2" : {
+    "name" : "Tobias",
+    "year" : 2007
+  },
+  "child3" : {
+    "name" : "Linus",
+    "year" : 2011
+  }
+}
+
+
+# access the items of the nasted list
+
+print(myfamily["child2"]["name"])
+
+
+# loop throught the nasted dicts
+
+for x, obj in myfamily.items():
+  print(x)
+
+  for y in obj:
+    print(y + ':', obj[y])
+    
