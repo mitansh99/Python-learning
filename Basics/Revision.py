@@ -47,3 +47,48 @@ str[::-1]  # return the reversed string
 # common string method
 len(str)  # - length of str
 str.upper()  # - covert sting into upper - same for lower()
+
+
+# Python Set
+
+# Unorderd, unique, mutable - primary use for membership testing and remove duplicates
+# creation
+
+setExample = {1, 2, 3}  # literal
+setExample = set([1, 2, 2])  # using constructor - result {1,2}
+
+emptySet = set()  # only {} create empty dictionary
+
+emptySet.add(1)  # add item at random place
+emptySet.remove(2)  # remove item will give error if item does not exsit
+emptySet.discard(20)  # remove - no error
+
+
+# python dictionaries
+#
+# data form on key-value pair
+# maintain insertion order - update, delete,add
+
+my_dicitonory = {"a": 1, "b": 2}  # - using literal
+my_dicitonory = dict(name="mitansh", age="young")  # using constuctor
+
+# empty dictinory can be create by using {} or dict()
+
+# common operations
+
+# access
+my_dicitonory["name"]
+my_dicitonory.get("name")  # return none when doesn't found
+
+# update
+my_dicitonory["age"] = "20"
+my_dicitonory.update({"age": "20"})
+
+# delete
+del my_dicitonory["name"]
+my_dicitonory.pop("name")
+
+# methods
+# .keys()
+# .values()
+# .items()
