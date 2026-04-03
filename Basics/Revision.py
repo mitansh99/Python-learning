@@ -92,3 +92,25 @@ my_dicitonory.pop("name")
 # .keys()
 # .values()
 # .items()
+
+
+# enumerate() - use to loop through list
+list_data = [0, 1, 2, 3]
+
+for index, value in enumerate(list_data):  # retun index and current value
+    print("index is :", index, "and value is", value)
+
+# zip() - flat two list into one
+
+list_1 = [0, 1, 2, 3]
+list_2 = [4, 5, 6, 7]
+
+new_list = zip(list_1, list_2)
+# new_list = [0,1,2,3,4,5,6,7] zip two list into onew new list
+
+# sorted() vs sort()
+
+a = [1, 7, 9, 2, 4, 5]
+sorted(a)  # will return false - check wether list is sorted
+
+a.sort()  # [1,2,4,5,7,9] will sort the list - return sorted new list
